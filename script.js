@@ -17,6 +17,7 @@ const Bg3 = document.querySelector('.bg-3');
 
 
 // =============== SIDE BAR ===================
+
 // remove active class from all menu items
 const changeActiveItem = () => {
     menuItem.forEach( item => {
@@ -34,8 +35,8 @@ menuItem.forEach(item => {
             document.querySelector('.notification-popup').style.display = 'block';
             document.querySelector('.notification-count').style.display = 'none';
         }
-    })
-})
+    });
+});
 
 // =============== MESSAGE ===================
 // searches chat
