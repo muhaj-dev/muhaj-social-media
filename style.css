@@ -689,6 +689,7 @@ main .container .right{
         width: 80%;
         height: 75%;
     }
+
 }
 
 @media screen and (max-width: 560px){
@@ -696,5 +697,6 @@ main .container .right{
     .customize-theme .card{
         width: 85%;
         height: 75vh;
+
     }
 }
