@@ -689,9 +689,7 @@ main .container .right{
         width: 80%;
         height: 75%;
     }
-    .customize-theme .choose-bg > div span {
-        margin-right: 0.7rem;
-    }
+
 }
 
 @media screen and (max-width: 560px){
@@ -699,18 +697,6 @@ main .container .right{
     .customize-theme .card{
         width: 85%;
         height: 75vh;
-    }
-    .customize-theme .choose-bg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
-    }
-    .customize-theme .choose-bg > div{
-        width: 30%;
-        font-size: 0.7rem;
-    }
-    .customize-theme .choose-bg > div span {
-       display: none;
+
     }
 }
