@@ -279,7 +279,7 @@ main .container .left .profile{
     background: url("./images/post/pexels-tuấn-kiệt-jr-1382731.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(3){
-    background: url("./images/post/pexels-matheus-bertelli-573299.jpg") no-repeat center center/cover;
+    background: url("./images/post/download.jpg") no-repeat center center/cover;
 }
 .middle .stories .story:nth-child(4){
     background: url("./images/post/pexels-juliana-stein-1898555.jpg") no-repeat center center/cover;
@@ -490,8 +490,8 @@ main .container .right{
 /**************** THEME CUSTOMIZATION ****************8*/
 .customize-theme {
     background: rgba(255, 255, 255, 0.5);
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -592,6 +592,7 @@ main .container .right{
     padding: var(--card-padding);
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 1rem;
     font-weight: bold;
@@ -685,6 +686,31 @@ main .container .right{
         display: none;
     }
     .customize-theme .card{
-        width: 92vw;
+        width: 80%;
+        height: 75%;
+    }
+    .customize-theme .choose-bg > div span {
+        margin-right: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 560px){
+
+    .customize-theme .card{
+        width: 85%;
+        height: 75vh;
+    }
+    .customize-theme .choose-bg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    .customize-theme .choose-bg > div{
+        width: 30%;
+        font-size: 0.7rem;
+    }
+    .customize-theme .choose-bg > div span {
+       display: none;
     }
 }
