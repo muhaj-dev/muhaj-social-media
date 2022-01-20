@@ -232,8 +232,8 @@ main .container .left .profile{
 .left .notification-popup::before{
     content: '';
     width: 1.2rem;
-    /* height: 1.2rem; */
-    aspect-ratio: 1/1;
+    height: 1.2rem;
+    /* aspect-ratio: 1/1; */
     display: block;
     background: var(--color-white);
     position: absolute;
@@ -696,14 +696,91 @@ main .container .right{
 
 @media screen and (max-width: 560px){
 
+    main {
+        margin-top: 5rem;
+    }
+    main .container .left{
+        grid-column: 1/4;
+        position: relative;
+        top: -5rem;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .left .sidebar{
+        height: 4rem;
+        display: flex;
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+    }
+    .left .sidebar .menu-item{
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        margin: 0;
+    }
+    .left .sidebar span{
+        display: flex;
+        justify-content: center;
+    }
+    .left .sidebar i {
+        font-size: 1.4rem;
+        margin: 0 auto;
+    }
+    .left .sidebar .active::before {
+        display: none;
+    }
+    .left .sidebar .menu-item:first-child.active::before{
+        content: '';
+        display: block;
+        width: 0.5rem;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        background: var(--color-primary);
+        border-top-left-radius: var(--card-border-radius);
+        border-bottom-left-radius: var(--card-border-radius);
+        overflow: hidden;
+    }
+    .left .sidebar .menu-item:last-child.active::after{
+        content: '';
+        display: block;
+        width: 0.5rem;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background: var(--color-primary);
+        border-bottom-left-radius: none;
+        border-top-right-radius: var(--card-border-radius);
+        border-bottom-right-radius: var(--card-border-radius);
+        overflow: hidden;
+    }
+    /* --------------NOTIFICATION POPUP-------------- */
+
+    .left .notification-popup{
+        position: absolute;
+        top: 5rem;
+        left: -140%;
+        width: 80vw;
+    }
+    .left .notification-popup::before{
+        display: none;
+    }
+
+    main .container .middle{
+        grid-column: 1/4;
+        display: grid;
+    }
     .customize-theme .card{
         width: 85%;
         height: 75vh;
     }
     .customize-theme .choose-bg{
-        display: flex;
-        align-items: center;
-        justify-content: center;
         gap: 0.5rem;
     }
     .customize-theme .choose-bg > div{
@@ -711,6 +788,7 @@ main .container .right{
         font-size: 0.7rem;
     }
     .customize-theme .choose-bg > div span {
-       display: none;
+    display: none;
     }
 }
+
