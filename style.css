@@ -687,14 +687,12 @@ main .container .right{
     }
     .customize-theme .card{
         width: 80%;
-        height: 75%;
+        height: 70%;
     }
-    .customize-theme .choose-bg > div span {
-        margin-right: 0.7rem;
-    }
+
 }
 
-@media screen and (max-width: 560px){
+@media screen and (max-width: 750px){
 
     main {
         margin-top: 5rem;
@@ -778,7 +776,8 @@ main .container .right{
     }
     .customize-theme .card{
         width: 85%;
-        height: 75vh;
+        height: 60%;
+
     }
     .customize-theme .choose-bg{
         gap: 0.5rem;
